@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dumb Dreams Shop</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Fuente de Google Fonts para un estilo moderno -->
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <header>
+        <nav>
+            <div class="logo">Dumb Dreams Shop</div>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección de productos -->
+    <section class="productos">
+        <h1>Nuestros Productos</h1>
+        <div class="productos-grid">
+            <!-- Producto 1 -->
+            <div class="producto">
+                <div class="imagen-principal" onclick="mostrarImagenes(this)">
+                    <img src="https://i.postimg.cc/jS88KZ5z/Captura-de-pantalla-2025-03-20-180302.png" alt="Camiseta Dumb Dreams 1">
+                </div>
+                <div class="imagenes-secundarias">
+                    <img src="https://i.postimg.cc/QCrmSz4r/Captura-de-pantalla-2025-03-20-180310.png" alt="Camiseta Dumb Dreams 2">
+            
+                </div>
+                <h3>Camiseta Dumb Dreams</h3>
+                <p>$20.00</p>
+                <button id="agregarProducto1">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 2 -->
+            <div class="producto">
+                <div class="imagen-principal" onclick="mostrarImagenes(this)">
+                    <img src="https://i.postimg.cc/KYR0YBkC/Captura-de-pantalla-2025-03-24-135005.png" alt="Camiseta Dumb Dreams 1">
+                </div>
+                <div class="imagenes-secundarias">
+                    <img src="https://i.postimg.cc/0NFcKj7j/Captura-de-pantalla-2025-03-24-135010.png" alt="Camiseta Dumb Dreams 2">
+                  
+                </div>
+                <h3>Camiseta Dumb Dreams</h3>
+                <p>$20.00</p>
+                <button id="agregarProducto2">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 3 -->
+            <div class="producto">
+                <div class="imagen-principal" onclick="mostrarImagenes(this)">
+                    <img src="https://i.postimg.cc/76zX34NV/Captura-de-pantalla-2025-03-24-135028.png" alt="Camiseta Dumb Dreams 1">
+                </div>
+                <div class="imagenes-secundarias">
+                    <img src="https://i.postimg.cc/fyjKPvpS/Captura-de-pantalla-2025-03-24-135039.png
+" alt="Camiseta Dumb Dreams 2">
+                  
+                </div>
+                <h3>Camiseta Dumb Dreams</h3>
+                <p>$20.00</p>
+                <button id="agregarProducto3">Agregar al Carrito</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Carrito de compras -->
+    <section class="carrito">
+        <h2>Tu Carrito</h2>
+        <div id="contenidoCarrito"></div>
+        <button id="checkout">Finalizar Compra</button>
+    </section>
+
+    <!-- Formulario de contacto -->
+    <section class="contacto">
+        <h2>Contacto</h2>
+        <form action="https://formspree.io/f/xldgnjva" method="POST">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="productos">Productos seleccionados:</label>
+            <textarea id="productos" name="productos" required></textarea>
+
+            <button type="submit">Enviar Mensaje</button>
+        </form>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2025 Dumb Dreams Shop. Todos los derechos reservados.</p>
+        <div class="redes-sociales">
+            <a href="https://www.instagram.com/dumb.dreams.1/">Instagram</a>
+            <a href="#">Tiktok</a>
+            <a href="#">Facebook</a>
+        </div>
+    </footer>
+
+    <!-- Vinculamos el archivo JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
